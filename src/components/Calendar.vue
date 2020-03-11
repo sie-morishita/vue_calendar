@@ -44,6 +44,12 @@ export default {
       var y = date.getFullYear()
       var m = ('0' + (date.getMonth() + 1)).slice(-2)
       var d = ('0' + date.getDate()).slice(-2)
+      
+      // yearとmonthを設定
+      this.year = y
+      this.month = m
+
+      // 今日の日付を設定
       this.today = y + '-' + m + '-' + d
     },
     methods: {
